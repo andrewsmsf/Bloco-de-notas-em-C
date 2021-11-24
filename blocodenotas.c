@@ -1,5 +1,5 @@
-// Programa que lÃª e exibe informaÃ§Ãµes digitadas
-// programa usando funÃ§Ãµes e ponteiros
+// Programa que e exibe informações digitadas
+// programa usando funções e ponteiros
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -22,7 +22,8 @@ char palavra[];
 // leitura de dado definido pelo usuario
 int main (){
     setlocale(LC_ALL,"Portuguese");
-    
+    FILE *ptr;
+    char nome;
     // Criacao da varialvel alt = (alternativa)
     printf("\n\n\t### Bem-vindo ao Bloco de Notas ###\n");
     printf("\t> Para criar um bloco de notas digite: 'C' para 'criar'\n");
@@ -35,7 +36,7 @@ int main (){
             // Criacao da variavel nome = (nome da pasta)
             printf("\n\t@@ O programa irá parar se apertar a tecla 'space'. @@");
             printf("\n\tDigite o nome do arquivo\n\t> ");
-            scanf("%s", nome);
+            gets(nome);
             system("cls");
             printf("\n\tC:/Desktop/Pasta que nao existe no seu PC/%s", nome);
             blocoDeNotas(saida, palavra);
