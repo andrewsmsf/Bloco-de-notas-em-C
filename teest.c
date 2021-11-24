@@ -1,23 +1,25 @@
 #include <stdio.h> 
 #include <stdlib.h>
 #include <string.h>
-#include <locale.h> // portugu√äs
+//#include <locale.h> // portugu√äs
+#include <conio.h>
+
 
 void escrever (char an[]);
 void ler (char an[]);
-void adicionar (char an[]);
+//void adicionar (char an[]);
 
 void escrever(char an[])
 {
-	FILE *fp = fopen(an,"w");
+	FILE *fp = fopen(an, "w");
 	char in[600];
 	if(fp){
 		printf("Para finalizar digite 1 caracter.\n");
 		scanf("%600[^\n]", in);
 		scanf("%c");
-		while(strlen(in) > 1){
+		while(strlen(in) > 1) {
 			fputs(in, fp);
-			fputc('\n', fp); //fputc('\n', fp);
+			fputc(' ', fp); //fputc('\n', fp);
 			scanf("%600[^\n]", in);
 			scanf("%c");
 		}
@@ -46,7 +48,7 @@ void ler(char an[])
 	}
 }
 
-/*oid adicionar(char an[])
+/*void adicionar(char an[])
 {
 	FILE *fp = fopen(an,"a+");
 	char in[600];
@@ -73,15 +75,15 @@ void ler(char an[])
 	}
 }*/
 
-char an[];
-int main(){
-	setlocale(LC_ALL,"Portuguese");
+	char an[];
+int main() {
+	//setlocale(LC_ALL,"Portuguese");
 	char opc;
 	
 	printf("\n\tBolco de Notas\n");
 	printf("\n\tNome do arquivo: ");
 	gets(an);
-	printf("\n\tOpÁıes que o programa oferece: ");
+	printf("\n\tOpÔøΩÔøΩes que o programa oferece: ");
 	printf("\n\t\t\t\t\tescrever > w");
 	printf("\n\t\t\t\t\tler > r");
 	printf("\n\t\t\t\t\tadicionar > a\n\t\t\t> ");
