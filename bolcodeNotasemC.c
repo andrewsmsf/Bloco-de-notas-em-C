@@ -4,11 +4,11 @@
 #include <locale.h> // portuguÊs
 #include <conio.h>
 
-char an[];
-void escrever (char an[]);
-void ler (char an[]);
+char an[400];
+void escrever (char an[400]);
+void ler (char an[400]);
 
-void escrever(char an[])
+void escrever(char an[400])
 {
 	FILE *fp = fopen(an, "w");
 	char in;
@@ -27,7 +27,7 @@ void escrever(char an[])
 	}
 }
 
-void ler(char an[])
+void ler(char an[400])
 {
 	FILE *fp = fopen(an,"r");
 	char in[400];
