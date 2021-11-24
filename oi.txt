@@ -1,4 +1,0 @@
-
-testando o aquivo .txt
-asld
-printf("\nAndrews");

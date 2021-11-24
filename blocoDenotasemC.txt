@@ -1,0 +1,4 @@
+
+teste para o aqruivo blocodeNotasemC
+lˆ tudo certinho
+printf("Hello World!");
