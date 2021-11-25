@@ -4,23 +4,23 @@
 #include <locale.h> // portuguÊs
 #include <conio.h>
 
-char an[400];
+char an[400]; // é o nome do arquivo
 void escrever (char an[400]);
 void ler (char an[400]);
 
 void escrever(char an[400])
 {
-	FILE *fp = fopen(an, "w");
-	char in;
+	FILE *fp = fopen(an, "w"); // abrindo o arquivo fopen / criando o ponteiro / o w é o tipo de abertura = escrever
+	char in; // in é para a escrita
 	if(fp){
 		system("cls");
 		printf("\n\tPara finalizar digite shitf + -\n");
-		scanf("%c", &in);
-		while(in != '_'){
-			fputc(in, fp);
+		scanf("%c", &in); // lendo apenas 1 caracter
+		while(in != '_'){ // condição para finalizar o programa
+			fputc(in, fp); // fputc ( caracter, local do arquivo)
 			scanf("%c", &in);
 		}
-		fclose(fp);
+		fclose(fp); // fechando o arquivo fclose
 	}
 	else{
         printf("\n\tERRO ao abrir o arquivo!.\n");
@@ -29,15 +29,14 @@ void escrever(char an[400])
 
 void ler(char an[400])
 {
-	FILE *fp = fopen(an,"r");
-	char in[400];
+	FILE *fp = fopen(an,"r"); // o r é o tipo de abertura = letra
+	char in;
 	if(fp){
 		system("cls");
 		printf("\n\tImagem do texto do arquivo: %s\n\n", an);
-		while(!feof(fp)){
-			if(fgets(in, 400, fp)){
-				printf("%s", in);
-			}
+		while(!feof(fp)){ // feof = f end o file / essa função verifia se chegou ao fim do arquivo e se chegar ao fim do arquivo retorna true
+			in = fgetc(fp); // atribuição / a função fgetc ela recebe o ponteiro para o arquivo e retorna 1 caracter
+			printf("%c", in); // mostrar o caracter
 		}
 		fclose(fp);
 	}
@@ -78,5 +77,6 @@ int main() {
 			ler(an);
 		break;
 	}
+	system("pause");
 	return 0;
 }
