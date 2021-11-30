@@ -1,0 +1,316 @@
+
+
+@font-face {
+	font-family: 'nexus';
+	src: url('Orbitron-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+
+body {
+	line-height: 1;
+	background-color: #000000;
+	background-image: linear-gradient( to bottom, black, black, rgb(15, 14, 14), rgb(34, 33, 33));
+    font-family: Arial;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	width: 100%;
+}
+
+
+/*Estilo Header*/
+.container {
+	font-family: 'nexus';
+	width: 80%;
+	margin: auto;
+	
+}
+.header {
+	display: inline-block;
+	background-color: #000000;
+	width: 100%;
+}
+.header .logo {
+	width: 300px;
+	margin: 5px auto;
+}
+.header .menu {
+	display: inline-block;
+	width: 100%;
+	background-color: rgba(235, 235, 235, 0.822);
+	background-image: radial-gradient(circle,  black, black, rgb(15, 14, 14), rgb(34, 33, 33));
+	height: 35px;
+	line-height: 35px;
+	border:  #ffffff;
+	border-radius: 10px;
+}
+.header .menu ul {
+	display: flex;
+}
+.header .menu ul li {
+	flex: auto;
+	text-align: center;
+}
+.header .menu ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	
+}
+.header .menu ul li:hover {
+	background-color: rgb(34, 33, 33) ;
+	
+}
+
+
+/*Estilo slider*/
+.body-content {
+	width: 100%;
+	min-height: 100px;
+	float: left;
+	margin-top: 25px;
+
+}
+.content-left {
+	width: 65%;
+	display: inline-block;
+}
+@media screen and (max-width: 768px) {
+	.content-left {
+		width: 100%;
+		display: inline-block;
+	}
+	
+}
+.slider {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.cycle-slideshow {
+	position: relative;
+	
+	
+}
+.cycle-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(15, 14, 14), rgb(49, 49, 49));
+	color: #fff;
+	width: 100%;
+	display: inline-block;
+	line-height: 24px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+.cycle-overlay a {
+	color: #fff;
+	text-decoration: none;
+}
+.cycle-overlay a:hover {
+	text-decoration: underline;
+}
+.slider-control {
+	position: absolute;
+	top: 40%;
+	z-index: 1000;
+	width: 100%;
+}
+.slider-control span {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	text-align: center;
+	line-height: 35px;
+	background-color: #000000;
+	opacity: 0.5;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.slider-control span#next {
+	float: right;
+}
+.slider-control span#prev {
+	float: left;
+}
+
+
+/*Corpo Portal de noticias principais*/
+.news-portal {
+	display: inline-block;
+	width: 100%;
+	
+	margin-top: 35px;
+}
+.news-portal a {
+	text-decoration: none;
+}
+.news-portal a:hover {
+	text-decoration: underline;
+}
+.news-portal h3 {
+	display: inline-block;
+	background-color: black;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	width: 75%;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	background-image: linear-gradient(to right,  black, black, rgb(15, 14, 14), rgb(34, 33, 33));
+	box-shadow: 1px 1px 1px 3px #616060;
+}
+.news-portal figure {
+	width: 35%;
+	float: left;
+	background-image: linear-gradient(to bottom,  rgb(0, 0, 0), rgb(15, 14, 14), rgb(49, 49, 49));
+	padding: 5px;
+	margin-bottom: 25px;
+	margin-right: 25px;
+	box-shadow: 0 1px 1px rgb(0, 0, 0);
+	border-radius: 5px;
+}
+.news-portal figcaption {
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	padding: 3px;
+	line-height: 20px;
+}
+
+
+/*Corpo de Noticias*/
+
+.news-body {
+	width: 60%;
+	float: none;
+	margin-left: 20%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	display: inline-block;
+	color: #ffffff;
+	
+}
+
+.news-body figcaption{
+	margin-top: 25px;
+}
+
+.news-body figure{
+	width: 90%;
+ 	margin-top: 30px;
+ 	margin-bottom: 30px;
+	float: left;
+	padding: 5px;
+	margin-right: 25px;	
+	border-radius: 5px;
+	background-image: linear-gradient(to bottom,  rgb(22, 22, 22), rgb(15, 14, 14), rgb(49, 49, 49));
+	box-shadow: 1px 1px 1px 3px #616060;
+	
+
+}
+
+.btn{
+	border: none;
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	background-color: rgb(34, 33, 33);
+	color: #ffffff;
+	margin-top: 15px;
+	font-family: 'nexus';
+}
+
+.btn:hover{
+background-color: black;
+cursor: pointer;
+
+
+}
+.btn:active{
+	background-color: #ffffff;
+	color: black;
+
+}
+
+#mais, #mais1, #mais2, #mais3{display: none;}
+
+
+/*Estilo Footer*/
+footer .wrapper{
+	float: left;
+	width: 100%;
+	max-height: 270px;
+	margin-left: 0px;
+	font-family: 'nexus';
+	font-size: relative;
+	color: #ffffff;
+	background-color:black;
+	background-image: linear-gradient( to bottom, black,  rgb(34, 33, 33));
+	padding-bottom: 40px;
+	border-top: 5px solid #ffff;
+
+}
+
+footer li, ul, a{
+	font-family: 'nexus';
+	color: #ffffff;
+	padding: 0;
+
+}
+
+
+footer img {
+	width: 25%;
+	border-radius: 15%;
+
+}
+
+.footer-box{
+	width: 30%;
+	padding: 1%;
+	float: left;
+
+}

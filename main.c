@@ -51,9 +51,8 @@ int main() {
 		break;
 	}
 	//voltando ao padrão windows
-	getch();
-	system("pause");
 	SetConsoleOutputCP(CPAGE_DEFAULT);
+	system("pause");
 	return 0;
 }
 
