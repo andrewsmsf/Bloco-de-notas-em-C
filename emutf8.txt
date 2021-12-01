@@ -1,8 +1,8 @@
-	Já neste arquivo como podem ver está em UTF-8 mostra todas as acentuações, enquanto o arquivo criado dentro
-do terminal não conseguiu imprimir as acentuações.
-	O código em C foi feito em UTF-8, ao seguir os procedimentos do para a
-criação do arquivo, a saída é em ANSI. Existe blocos de notas como o "NotePad++"
-que já faz a conversão do arquivo ANSI para UTF-8 resolvendo os problemas de
-acentuação.
+
+	Já neste aquivo como pode ver está em UTF-8 mostra todas as acentuações, enquanto
+o arquivo criado dentro do terminal não conseque imprimir as acentuações.
+	O código em C foi feito em UTF-8, ao seguir os procedimentos dentro
+do executável, a escrita sai no tipo ANSI. Existe programas que consegue
+fazer a conversão do arquivo ANSI para UTF-8 resolvendo os problemas de acentuação.
 	O programa em C funciona corretamente, com funções de escolha, escrita,
-repetidor e bibliotecas
+repetidor e bibliotecas.

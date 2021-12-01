@@ -1,0 +1,3 @@
+
+Hello guys, welcome to my project in C. This is a simple notepad in C.
+Espero que gostem.

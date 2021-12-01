@@ -1,12 +1,11 @@
 #include <stdio.h>  // FILE
 #include <stdlib.h>
-#include <string.h>
-#include <conio.h>
 #include <windows.h>// portuguÊs
 
 char an[400]; // é o nome do arquivo / arquivoNome
 void escrever (char an[400]);
 void ler (char an[400]);
+void anexar(char an[400]);
 
 int main() {
 	//definindo as paginas para UTF-8 e padrão windows
