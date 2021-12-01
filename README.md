@@ -1,4 +1,4 @@
-[![]{https://githubusercontent.com/andrewsmsf/Bloco-de-notas-em-C/main/img/blocodenotas.png?raw=true)]
+[![](https://github.com/andrewsmsf/Bloco-de-notas-em-C/main/img/blocodenotas.png?raw=true)]
 <br/>
 # Bloco de notas em C
  O Bloco de notas em C funciona com certas condições mas nada que mude o intuíto. Criar um programa capaz de fazer aquisição de arquivos tanto .txt como binários
